@@ -1,0 +1,180 @@
+{
+  "domain": "runexesolutions.com",
+  "site_type": "satellite-one",
+  "lang": "hu",
+  "seed": 591942848,
+  "direction": {
+    "id": "matchday-programme",
+    "name": "Matchday programme",
+    "world": "Football club programmes, team sheets, fixture lists, stadium signage",
+    "idea_prompt": "Build the page like a programme for one fixture: line-up, form table, kick-off, and the club's colour fields.",
+    "mode": "persuade",
+    "radius": "square",
+    "buttons": "square-fill",
+    "nav": "bar-left-wordmark",
+    "footer": "full-width-name",
+    "motion": "Score figures count up once when they enter; nothing loops.",
+    "density": 7
+  },
+  "palette": {
+    "id": "betmatch-hero-night",
+    "tones": [
+      "dark",
+      "deep",
+      "bright"
+    ],
+    "strategies": [
+      "committed",
+      "full"
+    ],
+    "ground": "#080C2F",
+    "surface": "#13184A",
+    "ink": "#F5F2FF",
+    "muted": "#B4B8E2",
+    "accent": "#FFC032",
+    "on_accent": "#080C2F",
+    "field": "#FFC032",
+    "on_field": "#080C2F",
+    "paper": "#ECEEF9",
+    "paper_ink": "#0A0E33",
+    "paper_muted": "#474C72",
+    "signal": "#2E5BFF",
+    "note": "Transferred from the BetMatch hero banner: night-navy stage, gold coin accent, programme-paper insert, ribbon blue for the board row. Replaces dealt route-green because the brief asks the design to follow the hero banners."
+  },
+  "palette_checks": [
+    {
+      "pair": "ink/ground",
+      "ratio": 17.24,
+      "min": 7.0,
+      "ok": true
+    },
+    {
+      "pair": "ink/surface",
+      "ratio": 15.13,
+      "min": 4.5,
+      "ok": true
+    },
+    {
+      "pair": "muted/ground",
+      "ratio": 9.87,
+      "min": 4.5,
+      "ok": true
+    },
+    {
+      "pair": "on_accent/accent",
+      "ratio": 11.63,
+      "min": 4.5,
+      "ok": true
+    },
+    {
+      "pair": "on_field/field",
+      "ratio": 11.63,
+      "min": 4.5,
+      "ok": true
+    }
+  ],
+  "type": {
+    "id": "saira-condensed-saira",
+    "class": "grotesk-condensed",
+    "display": {
+      "family": "Saira Condensed",
+      "weights": [
+        700,
+        800
+      ]
+    },
+    "text": {
+      "family": "Saira",
+      "weights": [
+        400,
+        500
+      ]
+    },
+    "tracking": "-0.02em",
+    "leading": 0.92,
+    "note": "Technical, scoreboard feel"
+  },
+  "type_scale": {
+    "ratio": 1.333,
+    "body_px": 17,
+    "max_sizes": 5,
+    "measure": "70ch"
+  },
+  "space": {
+    "base_px": 4,
+    "section_gap": "clamp(4.5rem, 9vw, 8rem)",
+    "max_width": "1360px",
+    "gutter": "clamp(1rem, 3vw, 2rem)"
+  },
+  "hero": {
+    "id": "photo-full-bleed",
+    "blueprint": "One decisive photograph covering the full first screen; H1 and one line set on a calm area of the photo with a neutral scrim only if needed.",
+    "mobile": "Photo at 70vh; text below the photo, not on it."
+  },
+  "sections": [
+    {
+      "role": "facts",
+      "section": "form-table",
+      "blueprint": "A form or league table with real figures, the highlighted row in the accent field."
+    },
+    {
+      "role": "how-it-works",
+      "section": "rule-leaflet-steps",
+      "blueprint": "Rule leaflet: small drawings beside each rule, set in a two-column flow like a printed insert."
+    },
+    {
+      "role": "features",
+      "section": "asymmetric-text-image",
+      "blueprint": "A narrow text column offset to 3/12 with a large image starting at 6/12 and overlapping the section boundary."
+    },
+    {
+      "role": "showcase",
+      "section": "split-media",
+      "blueprint": "Text 5/12, media 7/12, media bleeds to the viewport edge. Neighbours must not repeat this composition."
+    },
+    {
+      "role": "comparison",
+      "section": "comparison-table",
+      "blueprint": "A comparison table with the recommended row marked by weight and a field colour, not a badge."
+    },
+    {
+      "role": "faq",
+      "section": "faq-columns",
+      "blueprint": "Questions as real headings (h3) with answers visible in two columns on desktop, or native details/summary accordions."
+    },
+    {
+      "role": "cta",
+      "section": "field-statement",
+      "blueprint": "A full-width flat field of the accent or field colour with one statement at statement size and one action."
+    }
+  ],
+  "pages": [
+    "index"
+  ],
+  "motion": {
+    "signature": "Score figures count up once when they enter; nothing loops.",
+    "ease": "cubic-bezier(.2,.7,.1,1)",
+    "durations_ms": {
+      "feedback": 160,
+      "enter": 520
+    }
+  },
+  "illustration_language": "flat cut-paper shapes in 3 palette colours, no outlines",
+  "code_dna": {
+    "class_style": "semantic-short",
+    "class_style_rule": "Короткі семантичні класи без префікса: .lead, .facts, .route, .board, .note; стан через aria-* і data-state",
+    "prefix": "run",
+    "css_var_prefix": "--",
+    "files": {
+      "css": "css/main.css",
+      "js": "js/main.js",
+      "img": "img/",
+      "fonts": "fonts/"
+    },
+    "html_formatting": "2 spaces",
+    "image_format": "avif + webp fallback",
+    "js": "inline module at end of body"
+  },
+  "dealt_at": "2026-10-16",
+  "redraws": []
+}

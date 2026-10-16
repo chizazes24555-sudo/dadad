@@ -1,0 +1,16 @@
+{
+  "sites": [
+    {
+      "domain": "runexesolutions.com",
+      "site_type": "satellite-one",
+      "direction": "matchday-programme",
+      "palette": "betmatch-hero-night",
+      "type": "saira-condensed-saira",
+      "hero": "photo-full-bleed",
+      "class_style": "semantic-short",
+      "prefix": "run",
+      "files": "css/main.css",
+      "date": "2026-10-16"
+    }
+  ]
+}
